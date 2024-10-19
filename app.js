@@ -34,6 +34,8 @@ navToggle.addEventListener('click', () => {
 // ********** fixed navbar ************
 // seleziono la navbar
 const navbar = document.getElementById('nav');
+// seleziono il link che riporta in cima alla pagina
+const topLink = document.querySelector('.top-link');
 // aggancio un ascoltatore di eventi alla finestra
 window.addEventListener('scroll', () => {
 
