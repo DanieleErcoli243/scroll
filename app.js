@@ -6,6 +6,8 @@
 // ********** set date ************
 // seleziono la data dal DOM
 const date = document.getElementById('date');
+// imposto la data dinamicamente 
+date.innerHTML = new Date().getFullYear();
 // ********** close links ************
 
 // ********** fixed navbar ************
