@@ -70,5 +70,14 @@ scrollLinks.forEach(scrollLink => {
         const id = e.currentTarget.getAttribute('href').slice(1);
         // uso questo id per selezionare i link
         const element = document.getElementById(id);
-    })
-})
+        // ricavo la posizione più alta di un elemento
+        let position = element.offsetTop;
+        // stabilisco di quanto far scorrere la pagina
+        window.scrollTo({
+            left: 0,
+            top: position,
+        });
+        // chiudo la barra dopo il click
+        linksContainer.style.height = 0;
+    });
+});
