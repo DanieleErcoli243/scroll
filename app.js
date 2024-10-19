@@ -77,6 +77,14 @@ scrollLinks.forEach(scrollLink => {
         const fixedNav = navbar.classList.contains('fixed-nav');
         // ricavo la posizione più alta di un elemento sottraendo l'altezza della navbar
         let position = element.offsetTop - navHeight;
+        // controllo se la navbar è fixed o no
+        if (!fixedNav) {
+            position = position - navHeight;
+        }
+        // stabilisco se la navbar è aperta
+        if (navHeight > 82) {
+            position = position - containerHeight;
+        }
         // stabilisco di quanto far scorrere la pagina
         window.scrollTo({
             left: 0,
