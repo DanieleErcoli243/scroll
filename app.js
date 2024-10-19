@@ -23,7 +23,7 @@ navToggle.addEventListener('click', () => {
     // uso un metodo per avere l'altezza del contenitore dei link
     const containerHeight = linksContainer.getBoundingClientRect().height;
     // uso lo stesso metodo per avere l'altezza dei link
-    const linksHeight = link.getBoundingClientRect().height;
+    const linksHeight = navLinks.getBoundingClientRect().height;
 });
 // ********** fixed navbar ************
 
