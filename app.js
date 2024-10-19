@@ -38,7 +38,17 @@ const navbar = document.getElementById('nav');
 const topLink = document.querySelector('.top-link');
 // aggancio un ascoltatore di eventi alla finestra
 window.addEventListener('scroll', () => {
+    // dichiaro una variabile che contenga l'altezza della pagina già scorsa
+    const scrollHeight = window.pageYOffset;
+    // dichiaro una variabile per l'altezza della navbar
+    const navHeight = navbar.getBoundingClientRect().height;
+    // stabilisco le condizioni per attribuire la classe al nav
+    if (scrollHeight > navHeight) {
+        navbar.classList.add('fixed-nav');
+    } else {
+        navbar.classList.remove('fixed-nav');
 
+    }
 });
 // ********** smooth scroll ************
 // select links
