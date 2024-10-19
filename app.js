@@ -9,7 +9,12 @@ const date = document.getElementById('date');
 // imposto la data dinamicamente 
 date.innerHTML = new Date().getFullYear();
 // ********** close links ************
+// seleziono gli elementi del DOM necessari alla chiususra e apertura della navbar
+const navToggle = document.querySelector('.nav-toggle');
 
+const navLinks = document.querySelector('.links');
+
+const linkContainer = document.querySelector('.links-container');
 // ********** fixed navbar ************
 
 // ********** smooth scroll ************
