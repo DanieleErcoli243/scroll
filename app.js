@@ -57,3 +57,16 @@ window.addEventListener('scroll', () => {
 });
 // ********** smooth scroll ************
 // select links
+const scrollLinks = document.querySelectorAll('.scroll-link');
+
+// itero su ogni link
+
+scrollLinks.forEach(scrollLink => {
+    // aggancio un ascoltatore di eventi a ogni link
+    scrollLink.addEventListener('click', e => {
+        // uso l'evento per impedire il comportamento normale
+        e.preventDefault();
+        // salvo l'href di ogni link in una variabile
+        const id = e.currentTarget.getAttribute('href').slice(1);
+    })
+})
