@@ -47,8 +47,13 @@ window.addEventListener('scroll', () => {
         navbar.classList.add('fixed-nav');
     } else {
         navbar.classList.remove('fixed-nav');
-
-    }
+    };
+    // stabilisco la condizione per mostrare il link che manda in cima alla pagina
+    if (scrollHeight > 500) {
+        topLink.classList.add('show-link');
+    } else {
+        topLink.classList.remove('show-link');
+    };
 });
 // ********** smooth scroll ************
 // select links
