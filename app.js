@@ -68,5 +68,7 @@ scrollLinks.forEach(scrollLink => {
         e.preventDefault();
         // salvo l'href di ogni link in una variabile
         const id = e.currentTarget.getAttribute('href').slice(1);
+        // uso questo id per selezionare i link
+        const element = document.getElementById(id);
     })
 })
