@@ -24,6 +24,12 @@ navToggle.addEventListener('click', () => {
     const containerHeight = linksContainer.getBoundingClientRect().height;
     // uso lo stesso metodo per avere l'altezza dei link
     const linksHeight = navLinks.getBoundingClientRect().height;
+    // stabilisco la condizione per controllare dinamicamente l'altezza del contenitore dei link
+    if (containerHeight === 0) {
+        linksContainer.style.height = `${linksHeight}px`;
+    } else {
+        linksContainer.style.height = 0;
+    }
 });
 // ********** fixed navbar ************
 
