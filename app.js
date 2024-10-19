@@ -15,6 +15,11 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.links');
 
 const linkContainer = document.querySelector('.links-container');
+
+// aggancio un ascoltatore di eventi al pulsante per aprire e chiudere la navbar
+navToggle.addEventListener('click', () => {
+
+});
 // ********** fixed navbar ************
 
 // ********** smooth scroll ************
