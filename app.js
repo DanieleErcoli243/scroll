@@ -4,7 +4,8 @@
 //offsetTop - A Number, representing the top position of the element, in pixels
 
 // ********** set date ************
-
+// seleziono la data dal DOM
+const date = document.getElementById('date');
 // ********** close links ************
 
 // ********** fixed navbar ************
