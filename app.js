@@ -14,11 +14,12 @@ const navToggle = document.querySelector('.nav-toggle');
 
 const navLinks = document.querySelector('.links');
 
-const linkContainer = document.querySelector('.links-container');
+const linksContainer = document.querySelector('.links-container');
 
 // aggancio un ascoltatore di eventi al pulsante per aprire e chiudere la navbar
 navToggle.addEventListener('click', () => {
-
+    // uso il metodo toggle per aggiungere o togliere una classe
+    linksContainer.classList.add('show-links');
 });
 // ********** fixed navbar ************
 
