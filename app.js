@@ -32,6 +32,11 @@ navToggle.addEventListener('click', () => {
     }
 });
 // ********** fixed navbar ************
+// seleziono la navbar
+const navbar = document.getElementById('nav');
+// aggancio un ascoltatore di eventi alla finestra
+window.addEventListener('scroll', () => {
 
+});
 // ********** smooth scroll ************
 // select links
