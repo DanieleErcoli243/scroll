@@ -19,7 +19,11 @@ const linksContainer = document.querySelector('.links-container');
 // aggancio un ascoltatore di eventi al pulsante per aprire e chiudere la navbar
 navToggle.addEventListener('click', () => {
     // uso il metodo toggle per aggiungere o togliere una classe
-    linksContainer.classList.add('show-links');
+    // linksContainer.classList.add('show-links');
+    // uso un metodo per avere l'altezza del contenitore dei link
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    // uso lo stesso metodo per avere l'altezza dei link
+    const linksHeight = link.getBoundingClientRect().height;
 });
 // ********** fixed navbar ************
 
