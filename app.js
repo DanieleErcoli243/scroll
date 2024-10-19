@@ -75,8 +75,8 @@ scrollLinks.forEach(scrollLink => {
         const containerHeight = linksContainer.getBoundingClientRect().height;
         // dichiaro una variabile che dica se la navbar ha la classe o no
         const fixedNav = navbar.classList.contains('fixed-nav');
-        // ricavo la posizione più alta di un elemento
-        let position = element.offsetTop;
+        // ricavo la posizione più alta di un elemento sottraendo l'altezza della navbar
+        let position = element.offsetTop - navHeight;
         // stabilisco di quanto far scorrere la pagina
         window.scrollTo({
             left: 0,
