@@ -70,6 +70,11 @@ scrollLinks.forEach(scrollLink => {
         const id = e.currentTarget.getAttribute('href').slice(1);
         // uso questo id per selezionare i link
         const element = document.getElementById(id);
+        // calcolo le altezze
+        const navHeight = navbar.getBoundingClientRect().height;
+        const containerHeight = linksContainer.getBoundingClientRect().height;
+        // dichiaro una variabile che dica se la navbar ha la classe o no
+        const fixedNav = navbar.classList.contains('fixed-nav');
         // ricavo la posizione più alta di un elemento
         let position = element.offsetTop;
         // stabilisco di quanto far scorrere la pagina
