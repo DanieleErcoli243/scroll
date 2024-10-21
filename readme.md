@@ -1,0 +1,3 @@
+Scroll
+This project aims to let the user to navigate the page by using links connected to the ids of each section and to come back to the top of the page by clicking on a link that appears after scrolling a bit in the page. It also fixes dynamically the height of the  top navbar by measuring the height of the links in the mobile breakpoint. 
+I followed John Smilga's tutorial fro freeCodeCamp and used vanilla html, css and javascript. 
